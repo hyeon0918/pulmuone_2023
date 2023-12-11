@@ -1,0 +1,179 @@
+/* layout.css */
+
+/* 구글 폰트 Noto Sans Korean / Eng */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+@font-face {
+   font-family: Lohas_b;
+   src: url(../font/PulmuoneLOHASBold.woff); }
+
+@font-face {
+   font-family: NSKR;
+   src: url(../font/NotoSansKR-Regular-Hestia.otf); }
+
+/* common */ 
+body { font-size: 14px; font-family: 'NSKR', '맑은 고딕'; color: #7d7d7d; letter-spacing: -1px; }
+a { text-decoration: none; color: #7d7d7d;}
+
+/* 모바일 화면 layout - 0 ~ 759px */
+@media screen and (max-width: 759px) {
+/* layout */
+body.on { position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
+div.bg.on { z-index: 35; position: absolute; left: 0; right: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+
+#wrap { overflow-x: hidden; width: 100%; height: auto; }
+#header { z-index: 50; position: relative; padding: 20px 25px; height: 20px; border-bottom: 1px solid #ccc; } 
+   /* .header_wrap { z-index: 40; position: absolute; left: 0; top: 0; width: 100%; height: 56px; background-color: #fff; } */
+
+   /* sub1, sub2 sub_header */
+   .sub_header { display: none; }
+
+   #container { z-index: 30; position: relative; width: 100%; }
+   /* index.html */
+   /* main_pulmuone */
+   #content1 { width: 100%; } 
+
+   /* right_food */
+   #content2 { position: relative; width: 100%; padding: 40px 0; background: #ece9de; overflow: hidden; }
+      .right_food_inner { margin: 0 auto; width: 100%; max-width: 1180px; }
+
+   #content3 { width: 100%; min-width: 100%; background: url(../img/main_bg_3.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; padding: 40px 0; }
+      section.csr { width: 100%; color: #fff; } 
+
+   #content4 { width: 100%; min-width: 100%; padding: 40px 0; }
+      section.news_room { position: relative; width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 38px; overflow: hidden; box-sizing: border-box; background: #fff; }
+         .news_room_inner { width: 100%; }
+
+   #content5 { overflow: hidden; position: relative; width: 100%; min-width: 100%; background: #7f9f52; padding: 40px 0 0 0; } 
+      section.about_us { width: 100%; max-width: 100%; height: 100%; margin: 0 auto; }
+         .about_us_inner { width: 100%; }
+   /* sub1.html */
+   .min_content_nav { position: relative; width: 100%; margin: 0 auto; margin-top: 50px; margin-bottom: 55px; }
+
+   .investment { position: relative; margin-top: 10px; }
+      .content1 { position: relative; width: 100%; margin: 0 auto; text-align: center; }
+      .content1::after { content: ""; display: block; clear: both; }
+
+      .content2 {  width: 100%; margin: 0 auto; text-align: center; margin-top: 55px; padding-bottom: 75px; }
+         .finance { overflow-x: scroll; width: 100%; margin-top: 90px; }
+         .stock { overflow-x: scroll; margin-top: 90px; }
+
+   /* sub2,html */
+   .content_nav_sub2 { display: none; }
+   .min_content_nav_sub2 { position: relative; height: 104px; text-align: center; margin: 30px 10px 40px 10px; }
+
+
+#footer { width: 100%; margin: 0 auto; background: #fff; }
+.footer_inner { position: relative; margin: 0 auto; width: 100%; text-align: center; background: url(../img/bg_ft.gif)repeat-x center top; padding: 27px 0 0 0; }
+} /* // 모바일 layout 끝 */
+
+/* Tablet 화면 layout - 760px ~ 1024px */
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+
+body.on { position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
+div.bg.on { z-index: 35; position: absolute; left: 0; right: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+
+#wrap { overflow-x: hidden; width: 100%; height: auto; }
+#header { z-index: 50; position: relative;  padding: 20px 25px; height: 20px; border-bottom: 1px solid #ccc; } 
+   /* .header_wrap { z-index: 40; position: absolute; left: 0; top: 0; width: 100%; height: 56px; background-color: #fff; } */
+
+   /* sub1, sub2 sub_header */
+   .sub_header { display: none; }
+
+   #container { z-index: 30; position: relative; width: 100%; }
+   /* index.html */
+   /* main_pulmuone */
+   #content1 { width: 100%; } 
+
+   #content2 { position: relative; width: 100%; padding: 40px 0; background: #ece9de; overflow: hidden; } 
+      .right_food_inner { margin: 0 auto; width: 100%; max-width: 1180px; }
+
+   #content3 { position: relative; width: 100%; min-width: 100%; background: url(../img/main_bg_3.jpg) no-repeat 0 0; background-size: cover; overflow: hidden; padding: 40px 0; }
+      section.csr { width: 100%; color: #fff; } 
+
+   #content4 { position: relative; width: 100%; min-width: 100%; padding: 40px 0; }
+      section.news_room { position: relative; width: 100%; margin: 0 auto; padding: 0 38px; overflow: hidden; box-sizing: border-box; background: #fff; }
+         .news_room_inner { width: 100%;  }
+
+   #content5 { overflow: hidden; position: relative; width: 100%; min-width: 100%; background: #7f9f52; padding: 40px 0 0 0; } 
+      section.about_us { width: 100%; max-width: 100%; height: 100%; margin: 0 auto; }
+         .about_us_inner { width: 100%; }
+   
+   /* sub1.html */
+      .min_content_nav { position: relative; width: 100%; margin: 0 auto; margin-top: 50px; margin-bottom: 55px; }
+   .investment { position: relative; margin-top: 10px; }
+   
+      .content1 { position: relative; width: 100%; margin: 0 auto; text-align: center; }
+      .content1::after { content: ""; display: block; clear: both; }
+      .content2 {  width: 100%; margin: 0 auto; text-align: center; margin-top: 55px; padding-bottom: 75px; }
+         .finance { overflow-x: scroll; width: 100%; margin-top: 90px; }
+         .stock { overflow-x: scroll; margin-top: 90px; }
+
+   /* sub2.html */
+   .content_nav_sub2 { position: relative; text-align: center; margin: 0 50px 30px 50px; }
+   .min_content_nav_sub2 { display: none; }
+
+
+   /* footer */
+   #footer { width: 100%; margin: 0 auto; background: #fff; }
+   .footer_inner { position: relative; margin: 0 auto; width: 100%; text-align: center; background: url(../img/bg_ft.gif)repeat-x center top; padding: 40px 0 0 0; }
+} /* // 태블릿 layout 끝 */
+
+/* PC 화면 - 1025 ~ 최대px */
+@media screen and (min-width: 1025px) {
+/* layout */
+#wrap { width: 100%; height: auto; }
+   #header { z-index: 40; width: 100%; height: auto; font-family: 'Lohas_b'; }
+      .header_wrap { z-index: 40; position: absolute; left: 0; top: 0; width: 100%; height: 140px; background-color: #fff; padding-top: 20px; 
+         transition: height 0.2s linear 0s; box-sizing: border-box; }
+      .header_wrap::after { content: ""; display: block; position: absolute; left: 0; top: 140px; width: 100%; height: 1px; background: #d7d0d0; }
+      .header_wrap.on { height: 500px;}
+         .header_inner { position: relative; width: 1180px; height: 112px; margin: 0 auto; }
+
+   /* index.html */
+   #content1 { z-index: 30; position: relative; width: 100%; height: 100%; }
+   #content1::after { display: block; content: ""; clear: both; }
+      section.main_pulmuone { width: 100%; height: 100%; overflow: hidden; }
+         
+   #content2 { display: table; table-layout: fixed; width: 100%; height: 100%; background: #ece9de; } 
+      section.right_food { display: table-cell; vertical-align: middle;  position: relative; width: 100%; height: 100%; }
+         .right_food_inner { margin: 0 auto; width: 100%; max-width: 1180px; }
+
+   #content3 { display: table; table-layout: fixed; position: relative; overflow: hidden; width: 100%; background: url(../img/main_bg_3.jpg) no-repeat 0 0; background-size: cover; }
+      section.csr {display: table-cell; vertical-align: middle; width: 100%; } 
+
+   #content4 { display: table; table-layout: fixed; position: relative; overflow: hidden; width: 100%; min-width: 1180px; box-sizing: border-box; background: #fff; }
+      section.news_room { display: table-cell; vertical-align: middle; width: 100%; }
+         .news_room_inner { position: relative; top: -70px; width: 1180px; margin: 0 auto; }
+
+   #content5 { display: table; table-layout: fixed; position: relative; width: 100%; min-width: 1180px; overflow: hidden; background: #657E3E; } 
+      section.about_us { display: table-cell; vertical-align: middle; width: 100%; }
+         .about_us_inner { width: 100%; max-width: 100%; height: 100%; margin: 0 auto; }
+
+   /* sub1.html */
+   ul.content_nav { width: 1180px; height: 70px; margin: 0 auto; border-bottom: 2px solid #8bc73f; margin-top: 90px; }
+
+   .investment { position: relative; width: 100%;  margin-top: 110px; }
+   
+      .content1 { width: 1180px; margin: 0 auto; text-align: center; }
+      .content2 { position: relative; width: 1180px; margin: 0 auto; text-align: center; margin-top: 60px; }
+         .finance { width: 100%; margin-top: 60px; }
+         .stock {  margin-top: 90px; }
+
+   /* sub2.html */
+   .content_nav_sub2 { position: relative; margin: 0 auto; width: 1180px; margin-bottom: 55px; text-align: center; }
+   .min_content_nav_sub2 { display: none; }
+
+
+   /* footer */
+   #footer { width: 100%; color: #7d7d7d; background: #fff url(../img/bg_ft.gif)repeat-x center top; }
+   .footer_inner { width: 1180px; height: 345px; margin: 0 auto; padding: 40px 0 0 0; text-align: center; }
+
+
+
+
+
+} /* // PC 화면 layout 끝 */

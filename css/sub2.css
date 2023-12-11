@@ -1,0 +1,414 @@
+/* sub2.css */
+
+/* 모바일 화면 - 0 ~ 759px */
+@media screen and (max-width: 759px) {
+
+/* layout */
+   .spot { background: #7dad47; line-height: 21px; width: 100%; margin-bottom: 27px; text-align: center; }
+
+   .content { position: relative; width: 95%;  height: auto; padding: 2.5% 2.5%; }
+   form { width: 100% }
+      fieldset { width: 100%; }
+
+/* header */
+/* sub_header */
+.sub2_header { display: none; }
+
+/* container */
+/* div.spot */
+.spot > p:first-child { display: block; font-family: 'NSKR'; font-size: 16px; color: #fff; line-height: 21px; padding: 0; }
+.spot > p:last-child { display: none; }
+
+/* ul.content_nav */
+.min_content_nav_sub2 > li { display: list-item; box-sizing: border-box; float: left; width: 50%; border: 1px solid #a8a8a8; margin: -1px 0 0 -1px; }
+.min_content_nav_sub2 > li > a { display: inline-block; width: 100%; font-family: 'NSKR'; font-size: 13px; padding: 15px 0; }
+
+.min_content_nav_sub2 > li.on { position: relative; background: #a6cf39; border-color: #a6cf39; }
+.min_content_nav_sub2 > li.on > a { color: #fff; }
+
+
+
+
+/* section 시작 */
+/* form.cs */
+form.cs > h3 {display: block; width: 100%; font-size: 22px; color:#8ec301; margin-bottom: 16px;
+   line-height: 2.2; text-decoration: 2px underline; text-underline-offset: 14px; }
+
+/* 개인정보동의 fieldset */
+/* div.agree_info */
+fieldset:first-child::after { content: ""; clear: both; display: block; }
+fieldset > .agree_info { display: block; height: 162px; padding: 15px 12px; font-size: 13px; line-height: 23px; overflow: hidden; overflow-y: scroll; border: 1px solid #d6d6d6; background: #fdfdfd; }
+
+fieldset > .agree_info > h4 { font-size: 15px; line-height: 30px; }
+fieldset > .agree_info > h4:nth-of-type(3) { font-size: 17px; color: #444; font-weight: 600; }
+
+fieldset > .agree_info > p { display: block; padding-bottom: 10px; font-size: 15px; line-height: 30px; }
+fieldset > .agree_info > p > strong { font-size: 17px; color: #444; font-weight: 500; }
+
+/* .agree_check */
+fieldset > .agree_check { margin: 30px 0 43px 0;  }
+.agree_check > input[ type="radio"] { vertical-align: middle; }
+.agree_check > label { display: inline-block; padding-left: 10px; vertical-align: middle; }
+
+
+/* 문의내용작성 fieldset */
+form.cs > p { display: inline-block; font-size: 16px; line-height: 16px; padding-bottom: 12px; position: relative; width: 100%; text-align: right; }
+form.cs > p::before { display: block; content: ""; position: absolute; top: 5px; left: 86%; width: 11px; height: 9px; background: url(../img/ck_arrow.gif) no-repeat 0 50%;}
+
+
+.user_qna > table { position: relative; width: 100%; margin: 0; border-top: 1px solid #a8a8a8; border-bottom: 1px solid #a8a8a8; }
+
+.user_qna > table tr { width: 100%; height: 30px; border-bottom: 1px solid #d6d6d6; line-height: 30px; }
+.user_qna > table tr:last-child { border-bottom: 0; }
+.user_qna > table th { display: inline-block; max-width: 130px; width: 100px; padding: 9px 0; text-align: left; font-size: 16px; }
+
+.user_qna > table td { display: inline-block; max-width: 76%; width: 100%; padding: 9px 0; }
+.user_qna > table input, select { color: #666; border: 1px solid #e1e1e1; background: #fcfcfc; padding: 5px 12px; }
+.user_qna > table td label { font-size: 16px; color: #7d7d7d; }
+
+/* th 필수 항목 체크표시 */
+.user_qna > table tr:nth-of-type(1) > th { background: url(../img/ck_arrow.gif) no-repeat 55% 50%; }
+.user_qna > table tr:nth-of-type(2) > th { background: url(../img/ck_arrow.gif) no-repeat 55% 50%; }
+.user_qna > table tr:nth-of-type(3) > th { background: url(../img/ck_arrow.gif) no-repeat 40% 50%; }
+.user_qna > table tr:nth-of-type(4) > th { background: url(../img/ck_arrow.gif) no-repeat 85% 50%; }
+.user_qna > table tr:nth-of-type(5) > th { background: url(../img/ck_arrow.gif) no-repeat 65% 50%; }
+
+.user_qna > table tr:nth-of-type(8) > th { background: url(../img/ck_arrow.gif) no-repeat 45% 50%; }
+.user_qna > table tr:nth-of-type(9) > th { background: url(../img/ck_arrow.gif) no-repeat 70% 50%; }
+
+
+/* 작성자 input */
+.user_qna > table input.name[type="text"] { width: 92%; }
+
+/* 이메일 input */
+.user_qna > table td input[type="email"] { width: 92%; }
+.user_qna > table td.email_check { width: 100%; margin-left: 100px; margin-bottom: 7px; padding: 0; line-height: 30px; }
+
+/* 이메일 / 전화번호 체크박스 */
+.user_qna > table td input[type="checkbox"] { width: 18px; height: 18px; border: 1px solid #636363; vertical-align: middle; }
+.user_qna > table td label.email_notice { font-size: 14px; vertical-align: middle; }
+.user_qna > table td label.sns_check { font-size: 14px; vertical-align: middle; }
+
+/* 제목 input */
+.user_qna > table input.title[type="text"] { width: 94%; }
+
+/* location input */
+.user_qna > table td input[type="radio"] { vertical-align: middle;  }
+.user_qna > table td label.blank { margin-right: 10px; }
+
+/* 전화번호 input */
+
+.user_qna > table select { margin-left: 5px; width: 24%; }
+.user_qna > table td input[type="tel"] { width: 25%; }
+.user_qna > table td input.sns_check {  margin-left: 30px; }
+/* 주소 input */
+.user_qna > table td.address_1 input:first-child { width: 40%; }
+
+.user_qna > table td.address_1 input:nth-of-type(3) { width: 95%; }
+.user_qna > table td.address_1 input:last-child { width: 95%; }
+
+.user_qna > table td.address_1 input[type="button"] { width: 46%; margin-left: 5px; border: 1px solid #999; cursor: pointer; }
+
+
+
+/* 제품표기사항 input */
+.user_qna > table td.product_txt input[type="text"] { width: 95%; }
+
+/* 내용 textareaa */
+.user_qna > table td textarea { width: 98%; height: 159px; border: 1px solid #d6d6d6; background: #fcfcfc; }
+
+/* 내용구분 input */
+.user_qna > table td.content_radio input[type="radio"] { vertical-align: middle; width: 14px; height: 14p; padding: 5px; }
+.user_qna > table td.content_radio label { margin-right: 42px; margin-left: 5px; line-height: 12px; }
+
+/* 첨부파일 input */
+.user_qna > table td input[type="file"] { background: none; border: none; clear: both; width: 96%; }
+.user_qna > table p.attach { line-height: 25px; font-size: 14px; }
+
+/* 비밀번호 input */
+.user_qna > table td input[type="password"] { width: 94%; }
+.user_qna > table p.pw { width: 100%; margin-left: 100px; line-height: 25px; font-size: 14px; padding: 0; padding-bottom: 7px; }
+
+
+/* btn_list */
+div.btn_list { position: relative; margin-top: 50px; }
+
+.btn_list > span > input { width: 100%; line-height: 16px; font-size: 16px; background: #535353; color: #fff; padding: 23px 0; border: 0; margin-bottom: 20px; cursor: pointer; }
+.btn_list > span > button { width: 48%; float: left; line-height: 16px; padding: 22px 0; font-size: 16px; border: 1px solid #a8a8a8; background: #fff; cursor: pointer; }
+.btn_list > span > button:first-child { margin-right: 15px; }
+
+} /* 모바일 화면 끝 */
+
+/* Tablet 화면 - 760px ~ 1024px */
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+
+/* layout */
+#container { width: 100%; padding: 0 0 100px 0; margin: 0 auto; }
+   .spot { width: 100%; background: #7dad47; height: 156px; margin-bottom: 27px; text-align: center; }
+
+   .content { position: relative; width: 95%;  height: auto; padding: 2.5% 2.5%; }
+   form { width: 100%; }
+      fieldset { width: 100%;  }
+
+/* header */
+/* sub_header */
+
+/* container */
+/* div.spot */
+.spot > p:first-child { display: block; font-family: 'NSKR'; font-size: 33px; color: #fff; line-height: 33px; padding: 45px 0 13px 0; }
+.spot > p:last-child { display: block; font-family: 'NSKR'; font-size: 18px; color: #fff; line-height: 20px;  }
+
+/* ul.content_nav */
+.content_nav_sub2 > li { display: inline-block; }
+.content_nav_sub2 > li > a { display: inline-block; font-family: 'NSKR'; font-size: 23px; padding: 0 20px 8px 20px; }
+
+.content_nav_sub2 > li.on > a { display: inline-block; position: relative; color: #333; }
+.content_nav_sub2 > li.on > a::after { z-index: -1; display: inline-block; content: ""; position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%); 
+width: 100%; height: 18px; background: #b3e03b; }
+
+/* section 시작 */
+/* form.cs */
+form.cs > h3 {display: block; width: 100%; font-size: 26px; color:#8ec301; margin-bottom: 16px;
+   line-height: 2.2; text-decoration: 2px underline; text-underline-offset: 14px; }
+
+/* 개인정보동의 fieldset */
+/* div.agree_info */
+fieldset:first-child::after { content: ""; clear: both; display: block; }
+fieldset > .agree_info { display: block; background: #fdfdfd; padding: 29px 25px; border: 1px solid #d6d6d6; }
+
+fieldset > .agree_info > h4 { font-size: 15px; line-height: 30px; }
+fieldset > .agree_info > h4:nth-of-type(3) { font-size: 17px; color: #444; font-weight: 600; }
+
+fieldset > .agree_info > p { display: block; padding-bottom: 10px; font-size: 15px; line-height: 30px; }
+fieldset > .agree_info > p > strong { font-size: 17px; color: #444; font-weight: 500; }
+
+/* .agree_check */
+fieldset > .agree_check { margin: 30px 0 94px 0;  }
+.agree_check > input[ type="radio"] { vertical-align: middle; }
+.agree_check > label { display: inline-block; padding-left: 10px; vertical-align: middle; }
+
+
+/* 문의내용작성 fieldset */
+form.cs > p { display: inline-block; font-size: 16px; line-height: 16px; padding-bottom: 12px; position: relative; width: 100%; text-align: right;
+background: url(../img/ck_arrow.gif) no-repeat 92% 28%; }
+
+.user_qna > table { position: relative; width: 100%; margin: 0; border-top: 1px solid #a8a8a8; border-bottom: 1px solid #a8a8a8; }
+
+.user_qna > table tr { width: 100%; height: 27px; border-bottom: 1px solid #d6d6d6; line-height: 27px; }
+.user_qna > table tr:last-child { border: 0; }
+.user_qna > table th { display: inline-block; width: 130px; padding: 9px 0; text-align: left; font-size: 16px; }
+
+.user_qna > table td { display: inline-block; max-width: 80%; width: 100%; padding: 9px 0; }
+.user_qna > table input, select { color: #666; border: 1px solid #e1e1e1; background: #fcfcfc;}
+.user_qna > table td label { font-size: 16px; color: #7d7d7d; }
+
+/* th 필수 항목 체크표시 */
+.user_qna > table tr:nth-of-type(1) > th { background: url(../img/ck_arrow.gif) no-repeat 45% 50%; }
+.user_qna > table tr:nth-of-type(2) > th { background: url(../img/ck_arrow.gif) no-repeat 45% 50%; }
+.user_qna > table tr:nth-of-type(3) > th { background: url(../img/ck_arrow.gif) no-repeat 35% 50%; }
+.user_qna > table tr:nth-of-type(4) > th { background: url(../img/ck_arrow.gif) no-repeat 70% 50%; }
+.user_qna > table tr:nth-of-type(5) > th { background: url(../img/ck_arrow.gif) no-repeat 55% 50%; }
+
+.user_qna > table tr:nth-of-type(8) > th { background: url(../img/ck_arrow.gif) no-repeat 30% 50%; }
+.user_qna > table tr:nth-of-type(9) > th { background: url(../img/ck_arrow.gif) no-repeat 55% 50%; }
+
+
+/* 작성자 input */
+.user_qna > table input.name[type="text"] { width: 353px; }
+
+/* 이메일 input */
+.user_qna > table td.email input[type="email"] { width: 353px; }
+
+/* 이메일 / 전화번호 체크박스 */
+.user_qna > table td.email input[type="checkbox"] { width: 18px; height: 18px; border: 1px solid #636363; vertical-align: middle; }
+.user_qna > table td.email label.email_notice { font-size: 14px; vertical-align: middle; }
+.user_qna > table td.email label.sns_check { font-size: 14px; vertical-align: middle; }
+
+/* 제목 input */
+.user_qna > table input.title[type="text"] { width: 100%; }
+
+/* location input */
+.user_qna > table td input[type="radio"] { vertical-align: middle;  }
+.user_qna > table td label.blank { margin-right: 10px; }
+
+/* 전화번호 input */
+.user_qna > table select { width: 119px; }
+.user_qna > table td input[type="tel"] { width: 119px; }
+.user_qna > table td input.sns_check { margin-left: 20px; }
+
+/* 주소 input */
+.user_qna > table td.address_1 input:first-child { width: 350px; }
+
+.user_qna > table td.address_1 input[type="button"] { margin-left: 5px; border: 1px solid #999; cursor: pointer; }
+.user_qna > table td.address_1 input:nth-of-type(3) { width: 100%; }
+.user_qna > table td.address_1 input:last-child { width: 100%; }
+
+/* 제품표기사항 input */
+.user_qna > table td.product_txt input[type="text"] { width: 100%; }
+
+/* 내용 textareaa */
+.user_qna > table td textarea { width: 100%; height: 159px; border: 1px solid #d6d6d6; background: #fcfcfc; }
+
+/* 내용구분 input */
+.user_qna > table td.content_radio input[type="radio"] { vertical-align: middle; width: 14px; height: 14p; padding: 5px; }
+.user_qna > table td.content_radio label { margin-right: 42px; margin-left: 5px; line-height: 12px; }
+
+/* 첨부파일 input */
+.user_qna > table td input[type="file"] { background: none; border: none; clear: both; width: 96%; }
+.user_qna > table p.attach { line-height: 25px; font-size: 14px; }
+
+/* 비밀번호 input */
+.user_qna > table td input[type="password"] { width: 380px; }
+.user_qna > table p.pw { margin-left: 130px; line-height: 25px; font-size: 14px; padding: 0; padding-bottom: 7px; }
+
+
+/* btn_list */
+div.btn_list { position: relative; margin-top: 100px; }
+
+.btn_list > span > input { width: 100%; line-height: 16px; font-size: 16px; background: #535353; color: #fff; padding: 23px 0; border: 0; margin-bottom: 20px; cursor: pointer; }
+.btn_list > span > button { width: 48%; float: left; line-height: 16px; padding: 22px 0; font-size: 16px; border: 1px solid #a8a8a8; background: #fff; cursor: pointer; }
+.btn_list > span > button:first-child { margin-right: 15px; }
+
+
+} /* Tablet 화면 끝 */
+
+/* PC 화면 - 1025 ~ 최대px */
+@media screen and (min-width: 1025px) {
+
+/* layout */
+
+   /* .sub2_header { position: relative; max-width: 1180px; margin: 0 auto;  height: 112px; margin-top: 112px;  margin-bottom: 5px; } */
+   .sub2_header { position: relative; left: 0; top: 140px; max-width: 1180px; margin: 0 auto; height: 70px; margin-bottom: 140px; }
+   .sub2_header::after { display: block; clear: both; content: ""; }
+
+      #container { position: relative; padding: 0 0 120px 0; margin: 0 auto; }
+         .spot { background: #7dad47; height: 156px; margin-bottom: 75px; text-align: center; }
+
+         .content { width: 1180px; margin: 0 auto; }
+         form { width: 100%; }
+            fieldset { width: 75%; }
+
+/* sub_header */
+.sub2_header > h2 { position: absolute; top: 18px; left: 0; font-family: 'NSKR'; font-size: 25px; line-height: 25px; color: #333; padding: 16px 0 0 30px; }
+.sub2_header > ul { position: relative; float: right; text-align: center; margin-top: 30px; }
+.sub2_header > ul > li { display: inline-block; font-size: 18px; line-height: 25px; padding: 0 15px; }
+.sub2_header > ul > li a { font-family: 'NSKR'; color: #585858; }
+
+/* 클래스 on이 붙었을 때 */
+.sub2_header > ul > li.on a { color: #627D17; text-decoration-line: underline; text-underline-offset: 8px; text-decoration-thickness: 3px; }
+
+
+/* container */
+/* div.spot */
+.spot > p:first-child { display: block; font-family: 'NSKR'; font-size: 33px; color: #fff; line-height: 33px; padding: 45px 0 13px 0; }
+.spot > p:last-child { display: block; font-family: 'NSKR'; font-size: 18px; color: #fff; line-height: 20px;  }
+
+/* ul.content_nav */
+.content_nav_sub2 > li { display: inline-block; }
+.content_nav_sub2 > li > a { display: inline-block; font-family: 'NSKR'; font-size: 23px; padding: 0 20px 8px 20px; }
+
+.content_nav_sub2 > li.on > a { display: inline-block; position: relative; color: #333; }
+.content_nav_sub2 > li.on > a::after { z-index: -1; display: inline-block; content: ""; position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%); 
+   width: 100%; height: 18px; background: #b3e03b; }
+
+/* section 시작 */
+/* form.cs */
+form.cs > h3 {display: block; float: left; width: 20%; font-size: 26px; color:#8ec301; line-height: 2.2; text-decoration: 2px underline; text-underline-offset: 14px; }
+
+/* 개인정보동의 fieldset */
+/* div.agree_info */
+fieldset:first-child::after { content: ""; clear: both; display: block; }
+fieldset > .agree_info { display: block; background: #fdfdfd; padding: 29px 25px; border: 1px solid #d6d6d6; }
+
+fieldset > .agree_info > h4 { font-size: 15px; line-height: 30px; }
+fieldset > .agree_info > h4:nth-of-type(3) { font-size: 17px; color: #444; font-weight: 600; }
+
+fieldset > .agree_info > p { display: block; padding-bottom: 10px; font-size: 15px; line-height: 30px; }
+fieldset > .agree_info > p > strong { font-size: 17px; color: #444; font-weight: 500; }
+
+/* .agree_check */
+fieldset > .agree_check { margin: 30px 0 94px 0;  }
+.agree_check > input[ type="radio"] { vertical-align: middle; }
+.agree_check > label { display: inline-block; padding-left: 10px; vertical-align: middle; }
+
+
+/* 문의내용작성 fieldset */
+form.cs > p { display: inline-block; font-size: 16px; line-height: 16px; padding-bottom: 12px; position: relative; width: 75%; text-align: right;
+   background: url(../img/ck_arrow.gif) no-repeat 93% 28%; }
+
+.user_qna > table { width: 100%; border-top: 1px solid #a8a8a8; border-bottom: 1px solid #a8a8a8; }
+
+.user_qna > table tr { width: 100%; height: auto; border-bottom: 1px solid #d6d6d6; line-height: 30px; }
+.user_qna > table tr:last-child { border: 0; }
+.user_qna > table th { width: 124px; text-align: left; font-size: 16px; }
+.user_qna > table td { display: block; width: 760px; padding: 9px 0; }
+.user_qna > table input, select { color: #666; border: 1px solid #e1e1e1; background: #fcfcfc; }
+.user_qna > table td label { font-size: 16px; color: #7d7d7d; }
+
+/* th 필수 항목 체크표시 */
+.user_qna > table tr:nth-of-type(1) > th { background: url(../img/ck_arrow.gif) no-repeat 50% 50%; }
+.user_qna > table tr:nth-of-type(2) > th { background: url(../img/ck_arrow.gif) no-repeat 50% 50%; }
+.user_qna > table tr:nth-of-type(3) > th { background: url(../img/ck_arrow.gif) no-repeat 40% 50%; }
+.user_qna > table tr:nth-of-type(4) > th { background: url(../img/ck_arrow.gif) no-repeat 80% 50%; }
+.user_qna > table tr:nth-of-type(5) > th { background: url(../img/ck_arrow.gif) no-repeat 65% 50%; }
+
+.user_qna > table tr:nth-of-type(8) > th { background: url(../img/ck_arrow.gif) no-repeat 40% 50%; }
+.user_qna > table tr:nth-of-type(9) > th { background: url(../img/ck_arrow.gif) no-repeat 60% 50%; }
+
+
+/* 작성자 input */
+.user_qna > table input.name[type="text"] { width: 353px; }
+
+/* 이메일 input */
+.user_qna > table td input[type="email"] { width: 353px; }
+
+/* 이메일 / 전화번호 체크박스 */
+.user_qna > table td input[type="checkbox"] { width: 22px; height: 22px; border: 1px solid #636363; vertical-align: middle; }
+
+/* 제목 input */
+.user_qna > table input.title[type="text"] { width: 96%; }
+
+/* location input */
+.user_qna > table td input[type="radio"] { vertical-align: middle;  }
+.user_qna > table td label.blank { margin-right: 10px; }
+
+/* 전화번호 input */
+.user_qna > table select { width: 119px; }
+.user_qna > table td input[type="tel"] { width: 119px; }
+.user_qna > table td input.sns_check { margin-left: 20px; }
+
+/* 주소 input */
+.user_qna > table td.address_1 input:first-child { width: 350px; }
+
+.user_qna > table td.address_1 input[type="button"] { margin-left: 5px; border: 1px solid #999; cursor: pointer; }
+.user_qna > table td.address_1 input:nth-of-type(3) { width: 96%; }
+.user_qna > table td.address_1 input:last-child { width: 96%; }
+
+/* 제품표기사항 input */
+.user_qna > table td.product_txt input[type="text"] { width: 96%; }
+
+/* 내용 textareaa */
+.user_qna > table td textarea { width: 98%; height: 159px; border: 1px solid #d6d6d6; background: #fcfcfc; }
+
+/* 내용구분 input */
+.user_qna > table td.content_radio input[type="radio"] { vertical-align: middle; width: 14px; height: 14p; padding: 5px; }
+.user_qna > table td.content_radio label { margin-right: 42px; margin-left: 5px; line-height: 12px; }
+
+/* 첨부파일 input */
+.user_qna > table td input[type="file"] { background: none; border: none; clear: both; width: 96%; }
+.user_qna > table p.attach { line-height: 25px; font-size: 14px; }
+.user_qna > table td.file_all > label { display: none; }
+
+/* 비밀번호 input */
+.user_qna > table td input[type="password"] { width: 380px; }
+.user_qna > table p.pw { margin-left: 10px; line-height: 25px; font-size: 14px; padding: 0; padding-bottom: 7px; }
+
+
+/* btn_list */
+div.btn_list { display: flex; justify-content: center; margin-top: 100px; }
+
+.btn_list > span > input { width: 168px; line-height: 16px; font-size: 16px; background: #535353; color: #fff; padding: 23px 0; border: 0; margin-right: 10px; }
+.btn_list > span > button { width: 168px; line-height: 16px; padding: 22px 0; font-size: 16px; border: 1px solid #a8a8a8; background: #fff; }
+.btn_list > span > button:first-child { margin-right: 10px; }
+
+} /* PC 화면 끝 */

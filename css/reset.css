@@ -1,0 +1,77 @@
+/* reset.css 
+태그에 기본적으로 적용되어있는 내용 초기화
+*/
+@charset "utf-8";
+
+html, body, div, span, object, iframe, h1,h2,h3,h4,h5,h6,p,
+blockquote, pre, abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,strong,sub,sup,var,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,summary,
+
+small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,
+section,time,mark,audio,video {margin: 0; padding: 0;}
+
+/* 시멘틱 요소 block */
+article,aside,details,figcaption,figure,footer,header,menu,nav,section,video {display: block;}
+
+/*table에 border를 넣으면 칸이 벌어짐, border-collapse가 벌어짐 방지 */
+table{border-collapse: collapse;}
+/* 지정하지 않으면 칸과 칸 사이가 벌어짐 */
+fieldset,img{border: 0;}
+address,caption,cite,code,em,strong,th{font-style: normal; font-weight: normal;}
+ol,ul{list-style: none;}
+
+/* 기본 : 가운데 정렬 → 왼쪽으로 초기화 */
+caption,th {text-align: left;}
+/* h1~6 사이즈 초기와 굵기 초기화 */
+h1,h2,h3,h4,h5,h6{font-size: 100%; font-weight: normal;}
+/* 인용구 " " 삭제 */
+q:before, q:after{content:"";}
+/* 가상요소 + 인라인요소
+::after { content: ""; } → content에 입력한 내용이 뒤에 적힘 
+::before { content: ""; } → content에 입력한 내용이 앞에 적힘
+ex)  
+<p>::after와 ::before은 가상요소입니다. </p>
+p::before { content: "가상요소"; color: red; }  [출력내용] 가상요소::after와 ::before은 가상요소입니다.
+p::after { content: "가상요소"; color: blue; }  [출력내용] ::after와 ::before은 가상요소입니다.가상요소
+
+p::before { content: ""; display: inline-block; widht: 100px; height: 20px; background-color: red; } [출력내용] 설정한 박스크기의 요소가 생김
+*/
+
+abbr, acronym {border: 0;}
+/* img태그 기본 : 세로정렬  → 가운데 정렬로 초기화 */
+img,input{vertical-align: middle;}
+/*
+의미상 태그 마크업 화면에 보이지 않게 해주는거
+display: none 화면에 안보이고 시각장애인들에게 읽어주지도 않음
+skiNavi 화면에 보이지 않지만 시각장애인들에게 읽힘
+*/
+hr{display: none;}
+#skipNavi, .blind {position: absolute; left: 0; top: 0; width: 0; height: 0; font-size: 0;
+line-height: 0; text-indent:-9999px; overflow: hidden; visibility: hidden; }
+
+img { max-width: 100%; }
+/* width 값이 %로 된 이미지들이 브라우저의 사이즈가 줄어들 경우 비례를 맞춰 줄어들도록 입력 - ipad 사이즈에서 */
+
+
+
+/* 풀무원 공홈에서 가져온 것 */
+/* body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, span, a, 
+table, thead, tfoot, tbody, th, td, form, legend, label, 
+input, textarea, address, strong, em, pre, q, abbr, acronym, cite, blockquote, object, iframe {margin:0; padding:0;}
+body {font-family: 'NSKL', '맑은 고딕'; font-size:16px; color:#7d7d7d; line-height:1; -webkit-text-size-adjust: none;
+   - // 아이폰 글자크기 자동조정 방지 overflow:scroll; overflow-x:hidden;}
+ @-moz-document url-prefix(){ body {letter-spacing:-0.3px;};}
+img, fieldset, hr {border:0; margin:0; padding:0;}
+img {vertical-align:top;}
+ul, ol {list-style-type:none;}
+h1, h2, h3, h4, h5, h6 {font-size:12px; font-weight:normal;}
+select, input, textarea {font-family:맑은고딕, NG, 돋움, Dotum, Arial, sans-serif; color:#666; vertical-align:middle;}
+select {height:18px;}
+table {border-collapse:collapse;}
+address {font-style:normal;}
+hr {clear:both; display:none;}
+legend, caption {width:0; height:0; font-size:0; line-height:0; visibility:hidden; overflow:hidden;}
+
+a:link,a:visited			{color:#666; text-decoration:none;}
+a:hover,a:active,a:focus	{color:#666; text-decoration:underline;}  */

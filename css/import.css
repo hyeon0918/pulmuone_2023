@@ -1,0 +1,6 @@
+/* import.css */
+/* css 불러오는 순서 중요** */
+@import url(reset.css);
+@import url(layout.css);
+@import url(header.css);
+@import url(footer.css);
